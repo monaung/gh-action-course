@@ -15,3 +15,10 @@ jobs:
                 echo "I am running on ${{ runner.os }}"
                 echo "Runner OS: $RUNNER_OS"
     
+    windows-runner:
+        runs-on: windows-latest
+        steps:
+            - name: Show Windows OS
+              run: |
+                echo "I am running on ${{ runner.os }}"
+                echo "Runner OS: $RUNNER_OS"
