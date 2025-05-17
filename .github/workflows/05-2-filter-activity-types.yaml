@@ -1,0 +1,13 @@
+name: 05 - 01 - Activity Type
+on:
+    pull_request:
+        types:
+            - closed
+        branches:
+            - main
+
+jobs:
+    echo:
+        runs-on: ubuntu_latest
+        steps:
+            - run: echo "running whenever PR is closed  AND base branch is main"
